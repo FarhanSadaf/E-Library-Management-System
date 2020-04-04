@@ -3,7 +3,7 @@ This is a mock E-Library management based Web Project. <strong>Entity framework<
 <p>
 <strong>Topics covered:</strong>
 <ul>
-  <li>ASP.NET Framework</li>
+  <li>ASP.NET web forms based application</li>
   <li>SQL Server</li>
   <li>Entity Framework</li>
   <li>Bootstrap</li>
