@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication_LibraryManagementProject.UI.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>E-Library</title>
+    <link href="../Content/css/Site.css" rel="stylesheet" />
+    <link href="../Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/css/jquery-ui.css" rel="stylesheet" />
+    <link href="../Content/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="../Content/css/dataTables.jqueryui.css" rel="stylesheet" />
+    <script src="../Content/js/jquery-3.4.1.js"></script>
+    <script src="../Content/js/jquery-ui-1.12.1.js"></script>
+    <script src="../Content/js/jquery.dataTables.js"></script>
+    <script src="../Content/js/jquery.validate.js"></script>
+    <script src="../Content/js/jquery.validate.unobtrusive.js"></script>
+    <script src="../Content/js/popper.js"></script>
+    <script src="../Content/js/bootstrap.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <a href="#" class="navbar-brand">
+                <img src="../Images/books.png" height="30" />
+                E-Library
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="HomePage.aspx" id="Home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="AboutUs.aspx" id="About" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#" id="Contact" class="nav-link">Terms</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <asp:LinkButton class="nav-link" ID="ViewBooksNavLinkButton" runat="server" OnClick="ViewBooksNavLinkButton_Click">View Books</asp:LinkButton></li>
+                    <li class="nav-item">
+                        <asp:LinkButton class="nav-link" ID="UserLoginNavLinkButton" runat="server" OnClick="UserLoginNavLinkButton_Click">User Login</asp:LinkButton></li>
+                    <li class="nav-item">
+                        <asp:LinkButton class="nav-link" ID="SignUpNavLinkButton" runat="server" OnClick="SignUpNavLinkButton_Click">Sign Up</asp:LinkButton></li>
+                    <li class="nav-item">
+                        <asp:LinkButton class="nav-link" ID="LogoutNavLinkButton" runat="server" OnClick="LogoutNavLinkButton_Click">Logout</asp:LinkButton></li>
+                    <li class="nav-item">
+                        <asp:LinkButton class="nav-link" ID="HelloUserNavLinkButton" runat="server" OnClick="HelloUserNavLinkButton_Click">Hello user</asp:LinkButton></li>
+                </ul>
+            </div>
+        </nav>
+
+        <%--Main Content Place Holder--%>
+        <div class="body-content">
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <%--Footer--%>
+        <footer class="footer-copyright text-center <%--fixed-bottom--%>">
+            <div class="row footer1">
+                <div class="col text-center">
+                    <asp:LinkButton class="footerlinks" ID="AdminLoginFooterLinkButton" runat="server" OnClick="AdminLoginFooterLinkButton_Click">Admin Login</asp:LinkButton>
+                    <asp:LinkButton class="footerlinks" ID="AuthorManagementFooterLinkButton" runat="server" OnClick="AuthorManagementFooterLinkButton_Click">Author Management</asp:LinkButton>&nbsp;
+                    <asp:LinkButton class="footerlinks" ID="PublisherManagementFooterLinkButton" runat="server" OnClick="PublisherManagementFooterLinkButton_Click">Publisher Management</asp:LinkButton>&nbsp;
+                    <asp:LinkButton class="footerlinks" ID="BookInventoryFooterLinkButton" runat="server" OnClick="BookInventoryFooterLinkButton_Click">Book Inventory</asp:LinkButton>&nbsp;
+                    <asp:LinkButton class="footerlinks" ID="BookIssuingFooterLinkButton" runat="server" OnClick="BookIssuingFooterLinkButton_Click">Book Issuing</asp:LinkButton>&nbsp;
+                    <asp:LinkButton class="footerlinks" ID="MemberManagementFooterLinkButton" runat="server" OnClick="MemberManagementFooterLinkButton_Click">Member Management</asp:LinkButton>
+                </div>
+            </div>
+            <div class="row footer2">
+                <div class="col text-center">
+                    &copy;2020 - Farhan Sadaf&nbsp;
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

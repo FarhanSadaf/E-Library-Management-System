@@ -1,0 +1,41 @@
+﻿.footer1 {
+    background: #343a40;
+}
+.footer2 {
+    background: white;
+}
+.footerlinks {
+    color: white;
+    text-decoration: none !important;
+}
+.footerlinks:hover {
+    color: #ffd800;
+    text-decoration: none !important;
+}
+
+.bannertext {
+    margin-top: 80px;
+    font-weight: 600;
+    font-size: 60px;
+    transition: 1s;
+}
+.bannertext:hover {
+    color: #f0bc5e;
+    font-weight: 600;
+    font-size: 60px;
+}
+.homebanner {
+    background: #cbfadb;
+    padding: 30px;
+}
+@media screen and (max-width: 770px) {
+    .homebanner {
+        background: white;
+    }
+    .bannertext {
+        margin-top: 0;
+    }
+    .bannertext2 {
+        display: none;
+    }
+}
