@@ -9,6 +9,6 @@ This is a mock E-Library management based Web Project. <strong>Entity framework<
   <li>Bootstrap</li>
 </ul>
 </p>
-Change <strong>ConnectionString</strong> xml in <strong>Web.config</strong> file and connect to your own database before using it.
+Change <strong>connectionStrings</strong> xml in <strong>Web.config</strong> file and connect to your own database before using it.
 <p><strong><br/>Practice</strong></p>
 
